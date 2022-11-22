@@ -5,10 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
     <title>Cadastro de lojas</title>
 </head>
 <body>
-    
+    <body>
+        <section class="content">
+            <form id="form" onsubmit="event.preventDefault()">
+                <section class="nome">
+                    <label for="nomeLoja">Insira o nome da loja:</label>
+                    <input type="text" name="nome" id="nomeLoja" placeholder="Ex: Art Sweven"> <br>
+                </section>
+                <section class="endereco">
+                    <label for="enderecoLoja">Endereço da loja:</label>
+                    <input type="text" name="endereco" id="enderecoLoja" placeholder="Ex: Rodovia dos Bandeirantes, nºXXX"> <br>
+                </section>
+                <section class="diasFuncionamento">
+                    <span>Dias de funcionamento:</span> <br>
+                    <input type="checkbox" name="diasDaSemana" id="segunda" value="segunda">
+                    <label for="segunda">Segunda</label>
+                    <input type="checkbox" name="diasDaSemana" id="terca" value="terca">
+                    <label for="terca">Terça</label>
+                    <input type="checkbox" name="diasDaSemana" id="quarta" value="quarta">
+                    <label for="quarta">Quarta</label>
+                    <input type="checkbox" name="diasDaSemana" id="quinta" value="quinta">
+                    <label for="quinta">Quinta</label>
+                    <input type="checkbox" name="diasDaSemana" id="sexta" value="sexta">
+                    <label for="sexta">Sexta</label>
+                    <input type="checkbox" name="diasDaSemana" id="sabado" value="sabado">
+                    <label for="sabado">Sábado</label>
+                    <input type="checkbox" name="diasDaSemana" id="domingo" value="domingo">
+                    <label for="domingo">Domingo</label>
+                </section>
+                <section class="horarioAbertura">
+                    <label for="horárioAbertura">Horário de abertura:</label> <br>
+                    <input type="time" name="horárioAbertura" id="horárioAbertura">
+                </section>
+                <section class="horarioFechamento">
+                    <label for="horárioFechamento">Horário de fechamento:</label> <br>
+                    <input type="time" name="horárioFechamento" id="horárioFechamento">
+                </section>
+                <section class="submit">
+                    <input type="submit" id="submit" value="Cadastre sua loja">
+                </section>
+                <section class="button">
+                    <button id="buttonFlex">Clique aqui para mudar o sentido da página</button>
+                </section>
+                <section class="button">
+                    <button id="buttonGrid">Clique aqui para mudar o layout da página</button>
+                </section>
+                <section class="button">
+                    <button id="buttonReset">Clique aqui resetar o estilo da página</button>
+                </section>
+            </form>
+        </section>
 </body>
+<script src="index.js"></script>
 </html>
