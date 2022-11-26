@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* CSS RESET */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* CSS */
+
+body{
+    background-color: rgba(220, 220, 220, 0.782);
+}
+
+.content{
+    font-family: Poppins;
+    text-align: center;
+}
+
+.bar{
+    background-color: yellow;
+    height: 100px;
+}
+
+.searchBar, .navBar{
+    display: flex;
+    height: 50%;
+    border-bottom: 3px solid black;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: black;
+}
+
+.benefits{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divisor{
+    width: 1px;
+    height: 100%;
+    background-color: black;
+}
+
+.selectButton{
+    margin: 10px 0;
+}
+
+.products{
+    display: grid;
+    height: 80%;
+    width: 100%;
+    grid-template-columns: 20% 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.productAd{
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px){
+    .benefits{
+        display: none;
+    }
+}
